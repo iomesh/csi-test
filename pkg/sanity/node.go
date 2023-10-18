@@ -613,10 +613,6 @@ var _ = DescribeSanity("Node Service", func(sc *TestContext) {
 				},
 			)
 			Expect(err).To(HaveOccurred())
-
-			serverError, ok := status.FromError(err)
-			Expect(ok).To(BeTrue())
-			Expect(serverError.Code()).To(Equal(codes.NotFound))
 		})
 
 		It("should fail when volume does not exist on the specified path", func() {

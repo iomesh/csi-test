@@ -1,4 +1,4 @@
-module github.com/kubernetes-csi/csi-test/v3
+module github.com/iomesh/csi-test/v3
 
 go 1.12
 
